@@ -1,0 +1,45 @@
+#body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 20px;
+}
+#button-container {
+  margin-top: 10px;
+  display:flex;
+  justify-content:space-between;
+  width: 300px;
+}
+#favorite {
+  margin-top: 20px;
+  width: 700px;
+  display: flex;
+}
+.middle-button {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 0 10px;
+}
+.favorite-bar {
+  border: 1px solid rgb(173, 173, 173);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.rotate-left {
+  transform: rotate(30deg) scale(0.8);
+  transition: 1s;
+  margin-left: 400px;
+  cursor: e-resize;
+  opacity: 0;
+  z-index: 10;
+}
+.rotate-right {
+  transform: rotate(-30deg) scale(0.8);
+  transition: 1s;
+  opacity: 0;
+  margin-left: -400px;
+  cursor: w-resize;
+  z-index: 10;
+}
